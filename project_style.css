@@ -1,0 +1,32 @@
+/* Add specific styles for the Projects page */
+#projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #777;
+}

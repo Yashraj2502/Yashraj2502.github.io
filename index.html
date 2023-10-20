@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio Website</title>
+    <!-- Add your CSS files and stylesheets here -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add any additional meta tags for SEO and description here -->
+    <meta name="description" content="Your website description goes here.">
+</head>
+<body>
+    <header>
+        <!-- Your navigation menu goes here -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <!-- Your homepage content goes here -->
+        <h1>Welcome to Your Portfolio</h1>
+        <p>This is where you introduce yourself and highlight your skills.</p>
+    </section>
+
+    <section id="portfolio">
+        <!-- Your portfolio items go here -->
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="portfolio-item1.jpg" alt="Portfolio Item 1">
+            <h3>Project Title 1</h3>
+            <p>Description of your project goes here.</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </section>
+
+    <section id="projects">
+        <!-- Your projects or work samples go here -->
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <p>Description of your project goes here.</p>
+        </div>
+        <!-- Add more project details as needed -->
+    </section>
+
+    <section id="blog">
+        <!-- Your blog posts go here -->
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3>Blog Post Title 1</h3>
+            <p>Your blog content goes here.</p>
+        </div>
+        <!-- Add more blog posts as needed -->
+    </section>
+
+    <section id="about">
+        <!-- Your about me section goes here -->
+        <h2>About Me</h2>
+        <p>Introduce yourself and tell your story here.</p>
+    </section>
+
+    <section id="contact">
+        <!-- Your contact information and form go here -->
+        <h2>Contact</h2>
+        <p>Contact details and a contact form can be added here.</p>
+    </section>
+
+    <footer>
+        <!-- Your footer content goes here -->
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+
+    <!-- Add your JavaScript files and scripts here if needed -->
+
+    <script>
+        // Get references to the thumbnail images and the large image
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const largeImage = document.querySelector('.large-image');
+
+        // Add click event listeners to each thumbnail
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                // Set the large image source to the clicked thumbnail's source
+                largeImage.src = thumbnail.src;
+            });
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
